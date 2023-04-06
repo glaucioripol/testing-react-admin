@@ -1,18 +1,15 @@
-import { Edit, SimpleForm, ReferenceInput, TextInput, Form } from "react-admin";
+import { Edit, SimpleForm, ReferenceInput, TextInput } from "react-admin";
+
+import { PostTitle } from "./components";
 
 export const PostEdit = () => (
-  <Edit>
+  <Edit title={<PostTitle />}>
     <SimpleForm>
-      <ReferenceInput
-        source="userId"
-        reference="users"
-        sx={{
-          width: "100%",
-        }}
-      />
+      <TextInput source="id" disabled fullWidth />
+      <ReferenceInput source="userId" reference="users" />
       <TextInput source="id" fullWidth />
       <TextInput source="title" fullWidth />
-      <TextInput source="body" multiline fullWidth />
+      <TextInput source="body" multiline rows={5} fullWidth />
     </SimpleForm>
   </Edit>
 );
