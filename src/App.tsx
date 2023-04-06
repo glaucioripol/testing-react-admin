@@ -10,12 +10,17 @@ import {
   PostEdit,
   PostCreate,
   Dashboard,
+  authFunctions,
 } from "./modules";
 
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 
 const App = () => (
-  <Admin dataProvider={dataProvider} dashboard={Dashboard}>
+  <Admin
+    dataProvider={dataProvider}
+    dashboard={Dashboard}
+    authProvider={authFunctions.authProvider}
+  >
     <Resource
       name="posts"
       list={PostList}

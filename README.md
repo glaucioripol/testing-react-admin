@@ -14,6 +14,8 @@ body {
 
 * Se inspirar neste arquivo para uma rota customizada `src/modules/dashboard/Dashboard.tsx`
 
+* como customizar página de login `https://github.com/marmelab/react-admin/blob/master/docs/Authentication.md`
+
 ## Ajuda no desenvolvimento
 
 * ListGuesser -> usado para ver os campos que vem, não usar em produção, ele mostra os itens recuperados do banco de dados
