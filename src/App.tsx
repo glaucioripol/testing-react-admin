@@ -4,12 +4,18 @@ import jsonServerProvider from "ra-data-json-server";
 import PostIcon from "@mui/icons-material/Book";
 import UserIcon from "@mui/icons-material/Group";
 
-import { UsersList, PostList, PostEdit, PostCreate } from "./modules";
+import {
+  UsersList,
+  PostList,
+  PostEdit,
+  PostCreate,
+  Dashboard,
+} from "./modules";
 
 const dataProvider = jsonServerProvider("https://jsonplaceholder.typicode.com");
 
 const App = () => (
-  <Admin dataProvider={dataProvider}>
+  <Admin dataProvider={dataProvider} dashboard={Dashboard}>
     <Resource
       name="posts"
       list={PostList}

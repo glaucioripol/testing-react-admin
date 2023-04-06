@@ -12,7 +12,7 @@ body {
 
 * Para referenciar um dado ao outro, pode usar  `<Resource name="users" list={UserList} recordRepresentation="name" />` usando o `recordRepresentation="name"` para que o nome do usuário seja mostrado no lugar do id
 
-* a
+* Se inspirar neste arquivo para uma rota customizada `src/modules/dashboard/Dashboard.tsx`
 
 ## Ajuda no desenvolvimento
 
