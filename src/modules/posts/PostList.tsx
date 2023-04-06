@@ -4,6 +4,7 @@ import {
   TextField,
   ReferenceField,
   EditButton,
+  DeleteButton,
 } from "react-admin";
 
 export const PostList = () => (
@@ -13,6 +14,7 @@ export const PostList = () => (
       <ReferenceField source="userId" reference="users" />
       <TextField source="title" />
       <EditButton />
+      <DeleteButton />
     </Datagrid>
   </List>
 );
